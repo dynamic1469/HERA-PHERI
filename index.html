@@ -9,94 +9,67 @@
 </head>
 
 <body>
-    <div id="header">
-        <h2 class="logo">RAYBAN</h1>
-            <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact Us</a>
-                <button class="btn" onclick="popup_login()">LOG IN</button>
-            </nav>
-    </div>  
     <div id="main">
-        <h1>DARE TO</h1><br>
-        <h1>LEAP</h1>
-        <button>Explore</button>
-        
-    </div> 
-    <div id="text">
-        <p>Lorem ipsum dolor sit amet.
-        </p>
-        <img src="laptop-murjp1nk4lp1idlt.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eos. Iste, nesciunt, neque magni dolores nam voluptas laboriosam, officia totam delectus itaque animi ipsam.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore assumenda, cupiditate itaque sed fuga quibusdam tempora et enim incidunt, in facere. Vero ducimus voluptatibus ut mollitia. Quod omnis et error ipsam, reprehenderit inventore eligendi eos.</p>
-    </div>    
-    <div id="login">
-        <div id="login-top">
-           <h1>Login</h1>
-           <button onclick="popout()" id="close">Close</button>
+        <div id="header">
+            <h2 class="logo">GADDI</h1>
+                <nav class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                    <button class="btn" onclick="popup_login()">LOG IN</button>
+                </nav>
         </div>
-        
-        <div id="input-box">
-            <label for="USername">Username</label>
-            <br>
-            <input type="Username">
+        <div id="heading">
+            <h1>DARE TO LEAP</h1>
         </div>
-        <div id="input-box">
-            <label for="Password">Password</label>
-            <br>
-            <input type="Password">
-        </div>
-        <button id="login-btn">Login</button>
-        <div id="login-bottom">
-            <a href="forgot.html">Forgot password?</a>
-            <a href="#" onclick="popup_register()">Register?</a>
-        </div>
-        
-    </div>   
-    <div id="register">
-        <div id="login-top">
-           <h1>Register</h1>
-           <button onclick="popout()" id="close">Close</button>
-        </div>
-        
-        <div id="input-box">
-            <label for="USername">Username</label>
-            <br>
-            <input type="Username">
-        </div>
-        <div id="input-box">
-            <label for="Password">Password</label>
-            <br>
-            <input type="Password">
-        </div>
-        <button id="login-btn">Register</button>
-        <div id="login-bottom">
-            <a href="#" onclick="popup_login()">Login?</a>
-        </div>
-        
-    </div>      
-<script>
-function popup_login(){
-    
-      document.getElementById("login").style.display ="flex";
-      document.getElementById("register").style.display ="none";
+        <div id="login">
+            <div id="login-top">
+                <h1>Login</h1>
+                <button onclick="popout()" id="close">Close</button>
+            </div>
 
-    }
-    function popup_register(){
-    
-    document.getElementById("login").style.display ="none";
-    document.getElementById("register").style.display ="flex";
+            <div id="input-box">
+                <label for="USername">Username</label>
+                <br>
+                <input type="Username">
+            </div>
+            <div id="input-box">
+                <label for="Password">Password</label>
+                <br>
+                <input type="Password">
+            </div>
+            <button id="login-btn">Login</button>
+            <div id="login-bottom">
+                <a href="forgot.html">Forgot password?</a>
+                <a href="#" onclick="popup_register()">Register?</a>
+            </div>
 
-  }
-function popout(){
-    document.getElementById("login").style.display ="none";
-    document.getElementById("register").style.display="none";
-}    
-    
+        </div>
+        <div id="register">
+            <div id="login-top">
+                <h1>Register</h1>
+                <button onclick="popout()" id="close">Close</button>
+            </div>
 
-</script>    
+            <div id="input-box">
+                <label for="USername">Username</label>
+                <br>
+                <input type="Username">
+            </div>
+            <div id="input-box">
+                <label for="Password">Password</label>
+                <br>
+                <input type="Password">
+            </div>
+            <button id="login-btn">Register</button>
+            <div id="login-bottom">
+                <a href="#" onclick="popup_login()">Login?</a>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
