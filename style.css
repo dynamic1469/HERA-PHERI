@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+    /* background-color: blue; */
+    background-image: url("laptop-murjp1nk4lp1idlt.jpg");
+    background-size: cover;
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    color: white;
+    font-size: 2em;
+    user-select: none;
+    letter-spacing: 2px;
+}
+
+input {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    font-weight: 1000;
+    font-size: 1.5em;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: solid;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    border-radius: 5px;
+    background: white;
+    transition: 0.5s;
+
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+.navigation .btn {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin-left: 40px;
+    font-size: 1.1em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+/* .navigation .btn::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin-left: -40px;
+    margin-right: 20px;
+
+} */
+
+.navigation .btn:hover {
+    border: 1px solid white;
+}
+
+#login{
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    background-color: transparent;
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+   
+}
+#register{
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    background-color: transparent;
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+   
+}
+
+#login h1, #register h1{
+     text-align: center;
+     color: #fff;
+     margin-top: 20px;
+     
+}
+
+
+#login #input-box,#register #input-box{
+    margin-top: 60px;
+    border-bottom: 1px solid white;
+}
+
+#login #input-box label,#register #input-box label{
+    color: #fff;
+    margin-left: 5px;
+
+}
+
+#input-box input{
+    width: 250px;
+}
+
+#login-btn{
+    width: 250px;
+    border-radius: 16px;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    margin-top: 50px;
+}
+#login-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#login #login-bottom a,#register #login-bottom a{
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#close{
+    position: absolute;
+}
+
+#close{
+    width: 50px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    text-align: center;
+    border-radius: 16px;
+    line-height: 7px;
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left:100px;
+    transform: translate(0,-45%);
+}
+#main h1{
+
+    color: #fff;
+    font-size: 8em;
+    line-height: .8;
+    font-family: "kajiro";
+    font-weight: 100;
+    letter-spacing: 4px;
+
+}
+
+#main button{
+    background-color: white;
+    color: black;
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 18px;
+}
+
+#text{
+
+   margin-top: 30px;
+    width: 300px;
+    position: absolute;
+    right: 50px;
+    top:50%;
+    transform: translate(0,-50%);
+    color: #fff;
+}
+
+#text p:nth-child(4){
+    margin-top: 30px;
+}
+
+#text img{
+    width:200px;
+    height:150px;
+}
