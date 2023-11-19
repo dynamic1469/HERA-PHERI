@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("653ab9dd1ef121f163c484d03322f1a9.jpg");
+    background: black;
     background-size: cover;
 }
 
@@ -107,27 +107,40 @@ body {
 }
 
 .btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
     position: relative;
-    width: 100%;
-    height: 45px;
-    background: linear-gradient(45deg, black, greenyellow);
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    cursor: pointer;
-    color: white;
-    font-weight: 600;
-    background-image: linear-gradient(45deg, greenyellow, black);
-    background-repeat: no-repeat;
-    -webkit-background-clip: border-box;
-    background-position: 0px -500px;
-    box-shadow: 0px 0px 25px greenyellow;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 105%;
 }
 
 .btn:hover {
-    color: black;
-    transition: background-position 0.5s ease-in-out;
-    background-position: 0 0;
+    color: #111;
 }
 
 
