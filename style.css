@@ -99,13 +99,13 @@ input::placeholder {
     background-image: linear-gradient(#ffffff, rgb(250, 250, 250));
     background-repeat: no-repeat;
     -webkit-background-clip: border-box;
-    background-position: -100px 0;
+    background-position: -500px -500px;
 }
 
 .navigation .btn:hover {
     color: black;
     border: 1px solid rgb(255, 255, 255);
-    transition: background-position 0.3s ease-in-out;
+    transition: background-position 0.5s ease-in-out;
     background-position: 0 0;
 }
 
