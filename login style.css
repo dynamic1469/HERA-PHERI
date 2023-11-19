@@ -6,12 +6,13 @@
 }
 
 body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("HD-wallpaper-red-waves-on-black-background-red-aesthetic.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: black;
-    background-size: cover;
 }
 
 .BOX {
@@ -19,10 +20,10 @@ body {
     width: 750px;
     height: 450px;
     background: transparent;
-    border: 2px solid greenyellow;
-    box-shadow: greenyellow;
+    border: 2px solid crimson;
+    box-shadow: crimson;
     overflow: hidden;
-    box-shadow: 0px 0px 25px greenyellow;
+    box-shadow: 0px 0px 25px crimson;
 
 }
 
@@ -45,13 +46,15 @@ body {
 
 .form-box h2 {
     font-size: 32px;
-    color: white;
+    color: WHITE;
     text-align: center;
+
 }
 
 .form-box h2:hover {
-    color: greenyellow;
+    color: crimson;
 }
+
 
 .form-box .input-box {
     position: relative;
@@ -70,15 +73,15 @@ body {
     padding-right: 23px;
     font-size: 16px;
     font-weight: 500;
-    color: white;
-    border-bottom: 2px solid greenyellow;
+    color: WHITE;
+    border-bottom: 2px solid crimson;
 }
 
 .input-box label {
     position: absolute;
     top: 50%;
     left: 0;
-    color: white;
+    color: WHITE;
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -88,14 +91,14 @@ body {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    color: greenyellow;
+    color: crimson;
 }
 
 .input-box i {
     position: absolute;
     top: 50%;
     right: 0;
-    color: white;
+    color: WHITE;
     transform: translateY(-50%);
     font-size: 18px;
     transition: .5s;
@@ -103,12 +106,14 @@ body {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: greenyellow;
+    color: crimson;
 }
 
 .btn {
+    height: 50px;
+    width: 100%;
     padding: 0.8em 1.8em;
-    border: 2px solid #17C3B2;
+    border: 2px solid crimson;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -118,7 +123,7 @@ body {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #17C3B2;
+    color: crimson;
 }
 
 .btn::before {
@@ -129,7 +134,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #17C3B2;
+    background: crimson;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -151,7 +156,7 @@ body {
 }
 
 .link p a {
-    color: greenyellow;
+    color: crimson;
     text-decoration: none;
     font-weight: 600;
 }
@@ -179,13 +184,13 @@ body {
 .info-text h2 {
     font-size: 32px;
     text-transform: uppercase;
-    color: white;
+    color: WHITE;
     line-height: 1.3;
 }
 
 .info-text p {
     font-size: 16px;
-    color: white;
+    color: WHITE;
 }
 
 .BOX .bg-animate {
@@ -194,8 +199,8 @@ body {
     right: 0;
     width: 850px;
     height: 600px;
-    border-bottom: 3px solid greenyellow;
-    background: linear-gradient(45deg, #081b29, greenyellow);
+    border-bottom: 3px solid crimson;
+    background: linear-gradient(45deg, #081b29, crimson);
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
 }

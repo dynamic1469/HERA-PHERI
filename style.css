@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Audiowide", sans-serif;
 }
 
 body {
@@ -17,8 +17,13 @@ body {
     display: flex;
 
     /* background-color: blue; */
-    background-image: url("wp6825032-blacksmith-wallpapers.jpg");
+    background-image: url("HD-wallpaper-red-waves-on-black-background-red-aesthetic.jpg");
     background-size: cover;
+
+}
+
+img {
+    height: 45px;
 
 }
 
@@ -37,7 +42,7 @@ body {
 }
 
 .logo {
-    color: white;
+    color: WHITE;
     font-size: 2em;
     user-select: none;
     letter-spacing: 2px;
@@ -53,7 +58,7 @@ input {
 }
 
 input::placeholder {
-    color: white;
+    color: WHITE;
     font-weight: 1000;
     font-size: 1.5em;
 }
@@ -71,18 +76,20 @@ input::placeholder {
 .navigation a::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%);
     bottom: -6px;
     width: 0%;
     height: 3px;
     border-radius: 0px;
-    background: white;
+    background: WHITE;
     transition: 0.3s;
 
 }
 
 .navigation a:hover::after {
     width: 100%;
+    background: crimson;
 }
 
 .navigation .btn {
@@ -103,115 +110,13 @@ input::placeholder {
 }
 
 .navigation .btn:hover {
-    color: black;
+    color: WHITE;
     border: 1px solid rgb(255, 255, 255);
     transition: background-position 0.5s ease-in-out;
     background-position: 0 0;
 }
 
 /*LOGIN */
-#login {
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    background-color: transparent;
-    border: 1px solid white;
-    backdrop-filter: blur(8px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-
-}
-
-#register {
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    background-color: transparent;
-    border: 1px solid white;
-    backdrop-filter: blur(8px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-
-}
-
-#login h1,
-#register h1 {
-    text-align: center;
-    color: #fff;
-    margin-top: 20px;
-
-}
-
-
-#login #input-box,
-#register #input-box {
-    margin-top: 60px;
-    border-bottom: 1px solid white;
-}
-
-#login #input-box label,
-#register #input-box label {
-    color: #fff;
-    margin-left: 5px;
-
-}
-
-#input-box input {
-    width: 250px;
-}
-
-#login-btn {
-    width: 250px;
-    border-radius: 16px;
-    height: 30px;
-    background-color: #fff;
-    color: black;
-    border: none;
-    margin-top: 50px;
-}
-
-#login-bottom {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-#login #login-bottom a,
-#register #login-bottom a {
-    margin-top: 30px;
-    color: #fff;
-    text-decoration: none;
-}
-
-#close {
-    position: absolute;
-}
-
-#close {
-    width: 50px;
-    height: 20px;
-    border: none;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-size: 1em;
-    position: absolute;
-    right: 20px;
-    top: 35px;
-    text-align: center;
-    border-radius: 16px;
-    line-height: 7px;
-}
 
 /*login ends..*/
 
@@ -228,9 +133,9 @@ input::placeholder {
 
 #heading h1 {
     color: transparent;
-    font-size: 12em;
-    -webkit-text-stroke: 3px white;
-    font-family: "kajiro";
+    font-size: 4em;
+    -webkit-text-stroke: 3px WHITE;
+    font-family: " " Audiowide", sans-serif";
     font-weight: 100;
     letter-spacing: 45px;
     background-image: linear-gradient(#d19d00, rgb(232, 108, 0));
@@ -254,7 +159,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: WHITE;
 }
 
 #box1,
@@ -262,8 +167,8 @@ input::placeholder {
 #box3 {
     height: 500px;
     width: 400px;
-    background-color: white;
-    border: 2px solid white;
+    background-color: WHITE;
+    border: 2px solid WHITE;
     margin: 2px;
     left: 25%;
     padding: 2px;
@@ -287,6 +192,7 @@ input::placeholder {
 }
 
 #box3:hover {
+
     background-color: rgb(218, 216, 112);
     transform: scale(1.15);
     transition: transform 0.3s ease-in-out;
@@ -294,6 +200,10 @@ input::placeholder {
 
 #box1 .h2 {
     top: 50%;
-    color: black;
-    font-family: "kajiro";
+    color: WHITE;
+    font-family: " " Audiowide", sans-serif";
+}
+
+#box3:hover~#page2 {
+    background-color: crimson;
 }
