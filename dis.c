@@ -1,4 +1,5 @@
-// FIRST RULE OF PROGRAMMING--------------IT IT WORKS DONT TOUCH IT  
+// FIRST RULE OF PROGRAMMING--------------
+   IF IT WORKS DONT TOUCH IT  
 #include<stdio.h>
 void countdupe()           //   WAP COUNT DUPLICATE DIGITS IN ARRAY                                 
 {
